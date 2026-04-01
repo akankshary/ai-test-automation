@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --project=ui-tests",
+    "test:api": "npx playwright test --project=api-tests",
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
